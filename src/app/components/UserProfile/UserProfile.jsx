@@ -19,7 +19,7 @@ export const ImageContainer = styled.div`
   flex-direction: column;
   position: relative;
   height: 40%;
-  @media (min-width: 500px) {
+  @media (min-width: 600px) {
     height: 60%;
 
   }
@@ -43,7 +43,7 @@ export const InfoContainer = styled.div`
     left: 4vw;
     top: 35%;
   }
-  @media (min-width: 500px) {
+  @media (min-width: 600px) {
     left: 4vw;
     top: 53%;
     height: 80%;
@@ -65,7 +65,7 @@ export const ProfileImgContainer = styled.div`
   @media (max-width: 280px) {
     height: 10vh;
   }
-  @media (min-width: 500px) {
+  @media (min-width: 600px) {
     height:20vh;
   }
   
@@ -75,7 +75,9 @@ export const ImgNameWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  
 `;
+
 
 export const MembershipIconsContainer = styled.div`
   position: relative;
@@ -85,6 +87,10 @@ export const MembershipIconsContainer = styled.div`
   @media (max-width: 280px) {
     width: 12px;
     height: 12px;
+  }
+  @media (min-width: 500px) {
+    gap:0vw;
+
   }
 `;
 
@@ -111,6 +117,7 @@ export const UserDetailsContainer = styled.div`
   position: relative;
   top: 1rem;
   padding-left: 0.8rem;
+  
 `;
 
 export const AboutUserContainer = styled.div`
@@ -175,8 +182,8 @@ const UserProfile = ({ userDetails }) => {
           </ProfileImgContainer>
 
           <UserDetailsContainer>
-            <div style={{ display: "flex", alignItems: "center", gap: "2vw" }}>
-              <span style={{ fontSize: ".9rem", fontWeight: "600" }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <span style={{ fontSize: ".9rem", fontWeight: "600", paddingRight:"5px" }}>
                 {userDetails?.full_name}
               </span>
               <span
