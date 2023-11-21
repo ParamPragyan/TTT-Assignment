@@ -1,0 +1,64 @@
+{
+  "user_id": "1",
+  "background_image": {
+    "url": "/background.jpg"
+  },
+  "profile_image": {
+    "url": "/profilePicture.png"
+  },
+  "full_name": "Anuj Gosalia",
+  "follower_following_stats": {
+    "followers_count": 6482,
+    "following_count": 245
+  },
+  "biography": "Co-founder & CEO at Terribly Tiny Tales",
+  "social_media_link": "http://www.instagram.com/anujgosalia",
+  "engagement_stats": {
+    "stars_count": "125",
+    "likes_count": "1.3k",
+    "views_count": "13k",
+    "hearts_count": "23k"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "A Changing World Order",
+      "description": "The world is changing at a feverish pace. Friend , collegues and everyone engaged in knowledge work are beginning to sense this including.",
+      "thought": "musing",
+      "author": "anujghosalia",
+      "date": {
+        "month": "August",
+        "day": 2
+      },
+      "readTime": 8,
+      "views": 200
+    },
+    {
+      "id": 2,
+      "title": "India Vs Australia",
+      "description": "Think about it - this cricket series was akin to therapy.\n\nLaying our childhood trauma up top, working with it slowly and slowly over two me",
+      "thought": "thought",
+      "author": "anujghosalia",
+      "date": {
+        "month": "January",
+        "day": 21
+      },
+      "readTime": 1,
+      "views": 156
+    },
+    {
+      "id": 3,
+      "title": "Write to build",
+      "description": "Writing is the first step to create:\n \n - stories\n - products\n - companies.",
+      "author": "anujghosalia",
+      "thought": "thought",
+      "date": {
+        "month": "November",
+        "day": 18
+      },
+      "readTime": 1,
+      "views": 228
+    }
+  ]
+}
+
