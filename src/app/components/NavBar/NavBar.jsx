@@ -13,6 +13,11 @@ export const Nav = styled.nav`
   @media (max-width: 280px) {
     padding: 1rem 1rem;
   }
+  @media (min-width: 800px) {
+    padding: 1.3rem 5rem;
+
+  }
+  
 `;
 
 export const LogoImg = styled.div`

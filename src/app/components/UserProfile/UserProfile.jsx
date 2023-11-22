@@ -10,7 +10,6 @@ export const Container = styled.div`
   width: 100%;
   height: 50vh;
   position: relative;
-  
 `;
 
 export const ImageContainer = styled.div`
@@ -18,21 +17,18 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 40%;
+  height: 50%;
   @media (min-width: 600px) {
-    height: 60%;
-
+    height: 70%;
   }
 `;
-
-
 
 export const InfoContainer = styled.div`
   height: 60%;
   width: fit-content;
   position: absolute;
   z-index: 100;
-  top: 33%;
+  top: 43%;
   left: 10vw;
   display: flex;
   flex-direction: column;
@@ -45,68 +41,65 @@ export const InfoContainer = styled.div`
   }
   @media (min-width: 600px) {
     left: 4vw;
-    top: 53%;
+    top: 63%;
     height: 80%;
-    padding-left:6.5rem;
-    padding-bottom:3rem;
-  
+    padding-left: 6.5rem;
+    padding-bottom: 3rem;
   }
 `;
 
 export const ProfileImgContainer = styled.div`
-  height: 15vh;
+  height: 14.5vh;
   aspect-ratio: 1/1;
   position: relative;
   overflow: hidden;
   border-radius: 100%;
   object-fit: contain;
-  border: 1.5px solid #111111;
+  border: 1.8px solid #616161;
 
   @media (max-width: 280px) {
     height: 10vh;
   }
   @media (min-width: 600px) {
-    height:20vh;
+    height: 20vh;
   }
-  
 `;
 
 export const ImgNameWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  
 `;
-
 
 export const MembershipIconsContainer = styled.div`
   position: relative;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
 
   @media (max-width: 280px) {
     width: 12px;
     height: 12px;
   }
   @media (min-width: 500px) {
-    gap:0vw;
-
+    gap: 0vw;
   }
 `;
 
 export const StatsContainer = styled.div`
   display: flex;
-  gap: 0.4rem;
+  gap: 0.7rem;
 `;
 
 export const StatsItem = styled.span`
   border: 2px solid #989898;
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.7rem;
-  padding: 3px 6px;
+  text-align:center;
+  width: 4.2rem;
+  padding: 4px 2px;
+  font-size: 1.1rem;
   font-weight: 700;
 `;
 
@@ -117,7 +110,13 @@ export const UserDetailsContainer = styled.div`
   position: relative;
   top: 1rem;
   padding-left: 0.8rem;
-  
+`;
+
+export const UserName = styled.span`
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 5px;
+  font-family: "Fira Sans", sans-serif;
 `;
 
 export const AboutUserContainer = styled.div`
@@ -128,13 +127,15 @@ export const AboutUserContainer = styled.div`
 
 const SocialLink = styled.a`
   text-decoration: none;
-  font-size: 12px;
+  font-size: .8rem;
   color: #00cfd2;
+  font-weight:500;
   cursor: pointer;
 `;
 
 export const Bio = styled.p`
-  font-size: 0.9rem;
+  font-size: .99rem;
+  font-family: "Fira Sans", sans-serif;
 
   @media (max-width: 280px) {
     font-size: 0.8rem;
@@ -183,14 +184,12 @@ const UserProfile = ({ userDetails }) => {
 
           <UserDetailsContainer>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <span style={{ fontSize: ".9rem", fontWeight: "600", paddingRight:"5px" }}>
-                {userDetails?.full_name}
-              </span>
+              <UserName>{userDetails?.full_name}</UserName>
               <span
-                style={{ display: "flex", alignItems: "center", gap: "0.2rem" }}
+                style={{ display: "flex", alignItems: "center", gap: "0.3rem" }}
               >
                 <MembershipIconsContainer>
-                  <Image src={DiamondIcon} alt="diamond-member" fill={true} />
+                  <Image src={DiamondIcon} st alt="diamond-member" fill={true} />
                 </MembershipIconsContainer>
                 <MembershipIconsContainer>
                   <Image src={ApproveIcon} alt="approved-member" fill={true} />
@@ -209,7 +208,9 @@ const UserProfile = ({ userDetails }) => {
                 <StatsItem>
                   {userDetails?.follower_following_stats?.followers_count}
                 </StatsItem>
-                <span style={{ fontSize: "10px", textAlign: "center" }}>Followers</span>
+                <span style={{ fontSize: "10px", textAlign: "center" }}>
+                  Followers
+                </span>
               </div>
               <div
                 style={{
@@ -222,7 +223,9 @@ const UserProfile = ({ userDetails }) => {
                 <StatsItem>
                   {userDetails?.follower_following_stats?.following_count}
                 </StatsItem>
-                <span style={{ fontSize: "10px", textAlign: "center" }}>Following</span>
+                <span style={{ fontSize: "10px", textAlign: "center" }}>
+                  Following
+                </span>
               </div>
             </StatsContainer>
           </UserDetailsContainer>

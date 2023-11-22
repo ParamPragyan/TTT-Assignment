@@ -29,7 +29,7 @@ const ActivityStatsItem = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   font-size: .7rem;
   font-weight:600;
   @media (max-width: 280px) {

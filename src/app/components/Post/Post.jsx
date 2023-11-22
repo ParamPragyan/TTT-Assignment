@@ -4,11 +4,12 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import Like from "../../../../public/like.png";
+
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 2rem 1.8rem;
+  padding: 3.5rem  1.5rem 2rem 1.5rem;
   gap: 2rem;
   border-top: 1px solid #c5c5c5;
   max-width: 100%;
@@ -17,7 +18,8 @@ export const PostContainer = styled.div`
     padding: 1rem 0.4rem;
   }
   @media (min-width: 500px) {
-    padding: 1rem 10rem;
+    padding: 3.5rem  1rem 2rem 1rem;
+
   }
 `;
 
@@ -31,7 +33,7 @@ export const LikeButton = styled.span`
   }
 `;
 export const Title = styled.h2`
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 800;
 
   @media (max-width: 280px) {
@@ -54,8 +56,8 @@ export const PostInfo = styled.div`
   font-size: 10px;
 `;
 export const Description = styled.div`
- font-size:14px;
- letter-spacing:.5px;
+ font-size:1rem;
+ letter-spacing:.2px;
  line-height:1.5;
   @media (max-width: 280px) {
     font-size: 12px;
